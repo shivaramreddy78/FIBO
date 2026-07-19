@@ -1,0 +1,49 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "save": "Save"
+  },
+  "navbar": {
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "language": "Language"
+  },
+  "dashboard": {
+    "altCreditScore": "Alternative Credit Score",
+    "financialHealth": "Financial Health",
+    "riskLevel": "Risk Level",
+    "loanRecommendation": "Loan Recommendation",
+    "repaymentProbability": "Repayment Probability",
+    "monthlyIncome": "Monthly Income",
+    "monthlyExpenses": "Monthly Expenses",
+    "savings": "Savings",
+    "cashFlow": "Cash Flow",
+    "aiInsights": "AI Insights",
+    "reports": "Reports",
+    "uploadDocuments": "Upload Documents"
+  },
+  "forms": {
+    "email": "Email",
+    "password": "Password",
+    "emailPlaceholder": "Enter your email",
+    "passwordPlaceholder": "Enter your password",
+    "validationRequired": "This field is required",
+    "successMessage": "Operation successful"
+  },
+  "landing": {
+    "heroTitle": "Financial Inclusion for All",
+    "heroSubtitle": "AI-powered credit assessment for the next billion users.",
+    "getStarted": "Get Started"
+  }
+}

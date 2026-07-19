@@ -47,45 +47,52 @@ function LoadingScreen() {
   );
 }
 
+import { ThemeProvider } from './context/ThemeContext';
+import { SettingsProvider } from './context/SettingsContext';
+
 function App() {
   return (
-    <AuthProvider>
-      <BrowserRouter>
-        <Suspense fallback={<LoadingScreen />}>
-          <Routes>
-            {/* Public Routes */}
-            <Route path="/" element={<MainLayout><LandingPage /></MainLayout>} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/register" element={<RegisterPage />} />
-            <Route path="/forgot-password" element={<ForgotPassword />} />
-            <Route path="/reset-password" element={<ResetPassword />} />
-            <Route path="/verify-email" element={<EmailVerification />} />
-            
-            {/* Protected Routes */}
-            <Route element={<ProtectedRoute />}>
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/profile" element={<Profile />} />
-              <Route path="/settings" element={<Settings />} />
-              <Route path="/kyc" element={<KycVerification />} />
-              <Route path="/consent" element={<Consent />} />
-              <Route path="/financial-profile" element={<FinancialProfile />} />
-              <Route path="/upload-documents" element={<UploadDocuments />} />
-              <Route path="/ai-processing" element={<AiProcessing />} />
-              <Route path="/assessment-report" element={<AssessmentReport />} />
-            </Route>
+    <ThemeProvider>
+      <SettingsProvider>
+        <AuthProvider>
+          <BrowserRouter>
+            <Suspense fallback={<LoadingScreen />}>
+              <Routes>
+                {/* Public Routes */}
+                <Route path="/" element={<MainLayout><LandingPage /></MainLayout>} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/register" element={<RegisterPage />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
+                <Route path="/reset-password" element={<ResetPassword />} />
+                <Route path="/verify-email" element={<EmailVerification />} />
+                <Route path="/settings" element={<MainLayout><Settings /></MainLayout>} />
+                
+                {/* Protected Routes */}
+                <Route element={<ProtectedRoute />}>
+                  <Route path="/dashboard" element={<Dashboard />} />
+                  <Route path="/profile" element={<Profile />} />
+                  <Route path="/kyc" element={<KycVerification />} />
+                  <Route path="/consent" element={<Consent />} />
+                  <Route path="/financial-profile" element={<FinancialProfile />} />
+                  <Route path="/upload-documents" element={<UploadDocuments />} />
+                  <Route path="/ai-processing" element={<AiProcessing />} />
+                  <Route path="/assessment-report" element={<AssessmentReport />} />
+                </Route>
 
-            {/* Demo Routes */}
-            <Route path="/demo" element={<DemoGallery />} />
-            <Route path="/demo/processing/:id" element={<DemoProcessing />} />
-            <Route path="/demo/dashboard/:id" element={<DemoDashboard />} />
-            <Route path="/demo/compare" element={<DemoCompare />} />
+                {/* Demo Routes */}
+                <Route path="/demo" element={<DemoGallery />} />
+                <Route path="/demo/processing/:id" element={<DemoProcessing />} />
+                <Route path="/demo/dashboard/:id" element={<DemoDashboard />} />
+                <Route path="/demo/compare" element={<DemoCompare />} />
 
-            {/* 404 Route */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
-    </AuthProvider>
+                {/* 404 Route */}
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
+          </BrowserRouter>
+        </AuthProvider>
+      </SettingsProvider>
+    </ThemeProvider>
   );
 }
 

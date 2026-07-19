@@ -1,0 +1,49 @@
+{
+  "common": {
+    "loading": "লোড হচ্ছে...",
+    "error": "একটি ত্রুটি ঘটেছে",
+    "submit": "জমা দিন",
+    "cancel": "বাতিল করুন",
+    "continue": "চালিয়ে যান",
+    "save": "সংরক্ষণ করুন"
+  },
+  "navbar": {
+    "dashboard": "ড্যাশবোর্ড",
+    "profile": "প্রোফাইল",
+    "settings": "সেটিংস",
+    "logout": "লগ আউট",
+    "login": "লগ ইন",
+    "register": "নিবন্ধন করুন",
+    "home": "হোম",
+    "features": "বৈশিষ্ট্য",
+    "pricing": "মূল্য নির্ধারণ",
+    "language": "ভাষা"
+  },
+  "dashboard": {
+    "altCreditScore": "বিকল্প ক্রেডিট স্কোর",
+    "financialHealth": "আর্থিক স্বাস্থ্য",
+    "riskLevel": "ঝুঁকির স্তর",
+    "loanRecommendation": "ঋণ সুপারিশ",
+    "repaymentProbability": "পরিশোধের সম্ভাবনা",
+    "monthlyIncome": "মাসিক আয়",
+    "monthlyExpenses": "মাসিক ব্যয়",
+    "savings": "সঞ্চয়",
+    "cashFlow": "নগদ প্রবাহ",
+    "aiInsights": "এআই অন্তর্দৃষ্টি",
+    "reports": "প্রতিবেদন",
+    "uploadDocuments": "নথিপত্র আপলোড করুন"
+  },
+  "forms": {
+    "email": "ইমেইল",
+    "password": "পাসওয়ার্ড",
+    "emailPlaceholder": "আপনার ইমেইল লিখুন",
+    "passwordPlaceholder": "আপনার পাসওয়ার্ড লিখুন",
+    "validationRequired": "এই ক্ষেত্রটি প্রয়োজন",
+    "successMessage": "অপারেশন সফল"
+  },
+  "landing": {
+    "heroTitle": "সবার জন্য আর্থিক অন্তর্ভুক্তি",
+    "heroSubtitle": "পরবর্তী বিলিয়ন ব্যবহারকারীদের জন্য এআই-চালিত ক্রেডিট মূল্যায়ন।",
+    "getStarted": "শুরু করুন"
+  }
+}

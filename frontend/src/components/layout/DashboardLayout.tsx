@@ -13,11 +13,14 @@ import {
   X
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
+import { useTranslation } from 'react-i18next';
+import { LanguageSelector } from '../ui/LanguageSelector';
 
 export function DashboardLayout({ children }: { children: React.ReactNode }) {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
+  const { t } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [notificationsOpen, setNotificationsOpen] = useState(false);
   const [notifications, setNotifications] = useState([
@@ -41,10 +44,10 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
   };
 
   const navItems = [
-    { label: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
+    { label: t('navbar.dashboard') || 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
     { label: 'Credit Assessment', path: '/kyc', icon: Target },
-    { label: 'Documents', path: '/upload-documents', icon: FileText },
-    { label: 'Profile', path: '/profile', icon: Settings },
+    { label: t('dashboard.uploadDocuments') || 'Documents', path: '/upload-documents', icon: FileText },
+    { label: t('navbar.profile') || 'Profile', path: '/profile', icon: Settings },
   ];
 
   const handleLogout = () => {
@@ -104,13 +107,14 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
           })}
         </div>
 
-        <div className="p-4 border-t border-border flex-shrink-0">
+        <div className="p-4 border-t border-border flex-shrink-0 space-y-4">
+          <LanguageSelector className="w-full" />
           <button 
             onClick={handleLogout}
             className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-red-600 hover:bg-red-50 transition-colors"
           >
             <LogOut size={18} />
-            <span className="font-medium">Logout</span>
+            <span className="font-medium">{t('navbar.logout') || 'Logout'}</span>
           </button>
         </div>
       </aside>

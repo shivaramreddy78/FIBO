@@ -17,10 +17,12 @@ import {
 } from 'recharts';
 import { motion } from 'framer-motion';
 import { useAuth } from '../../context/AuthContext';
+import { useTranslation } from 'react-i18next';
 
 export function Dashboard() {
   const navigate = useNavigate();
   const { user } = useAuth();
+  const { t } = useTranslation();
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
@@ -143,7 +145,7 @@ export function Dashboard() {
           onClick={() => alert("Alternative Credit Score is calculated dynamically using XGBoost over 150+ behavioral features.")}
           className="bg-white rounded-2xl p-5 border border-border shadow-sm cursor-pointer hover:border-emerald-500 transition-colors"
         >
-          <p className="text-muted-foreground text-xs font-medium uppercase tracking-wider mb-1">Alt Credit Score</p>
+          <p className="text-muted-foreground text-xs font-medium uppercase tracking-wider mb-1">{t('dashboard.altCreditScore') || 'Alt Credit Score'}</p>
           <div className="text-3xl font-bold text-foreground">{assessment.score}</div>
           <div className="mt-2 flex items-center text-xs text-emerald-600 font-medium">
             <TrendingUp size={12} className="mr-1"/> Top 15% of users
@@ -153,7 +155,7 @@ export function Dashboard() {
           onClick={() => alert("Risk Level assesses income stability, transaction velocity, and overall leverage.")}
           className="bg-white rounded-2xl p-5 border border-border shadow-sm cursor-pointer hover:border-emerald-500 transition-colors"
         >
-          <p className="text-muted-foreground text-xs font-medium uppercase tracking-wider mb-1">Credit Risk Level</p>
+          <p className="text-muted-foreground text-xs font-medium uppercase tracking-wider mb-1">{t('dashboard.riskLevel') || 'Credit Risk Level'}</p>
           <div className="text-2xl font-bold text-foreground">{assessment.risk_level}</div>
           <div className="mt-2 flex items-center text-xs text-muted-foreground font-medium">
             Based on 6 mo. history
@@ -163,7 +165,7 @@ export function Dashboard() {
           onClick={() => alert("Repayment probability models historical utility and rent payments against standard deviation of income.")}
           className="bg-white rounded-2xl p-5 border border-border shadow-sm cursor-pointer hover:border-emerald-500 transition-colors"
         >
-          <p className="text-muted-foreground text-xs font-medium uppercase tracking-wider mb-1">Approval Prob.</p>
+          <p className="text-muted-foreground text-xs font-medium uppercase tracking-wider mb-1">{t('dashboard.repaymentProbability') || 'Approval Prob.'}</p>
           <div className="text-3xl font-bold text-emerald-600">{assessment.repayment_probability}</div>
           <div className="mt-2 flex items-center text-xs text-emerald-600 font-medium">
             Highly likely to repay
@@ -173,7 +175,7 @@ export function Dashboard() {
           onClick={() => alert("Health Score aggregates savings rate, debt-to-income ratio, and essential spend ratios.")}
           className="bg-white rounded-2xl p-5 border border-border shadow-sm cursor-pointer hover:border-emerald-500 transition-colors"
         >
-          <p className="text-muted-foreground text-xs font-medium uppercase tracking-wider mb-1">Health Score</p>
+          <p className="text-muted-foreground text-xs font-medium uppercase tracking-wider mb-1">{t('dashboard.financialHealth') || 'Health Score'}</p>
           <div className={`text-3xl font-bold ${fhiColor}`}>{fhi}/100</div>
           <div className="mt-2 flex items-center text-xs text-muted-foreground font-medium">
             {fhi > 80 ? 'Excellent' : fhi > 60 ? 'Good' : 'Needs Improvement'}
@@ -184,15 +186,15 @@ export function Dashboard() {
       {/* 3. FINANCIAL OVERVIEW */}
       <motion.div {...fadeUp} transition={{ delay: 0.2 }} className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="bg-muted/30 rounded-2xl p-5 border border-border">
-          <p className="text-muted-foreground text-sm font-medium mb-1">Monthly Income</p>
+          <p className="text-muted-foreground text-sm font-medium mb-1">{t('dashboard.monthlyIncome') || 'Monthly Income'}</p>
           <div className="text-2xl font-bold">₹{monthlyIncome.toLocaleString()}</div>
         </div>
         <div className="bg-muted/30 rounded-2xl p-5 border border-border">
-          <p className="text-muted-foreground text-sm font-medium mb-1">Monthly Expenses</p>
+          <p className="text-muted-foreground text-sm font-medium mb-1">{t('dashboard.monthlyExpenses') || 'Monthly Expenses'}</p>
           <div className="text-2xl font-bold">₹{monthlyExpenses.toLocaleString()}</div>
         </div>
         <div className="bg-muted/30 rounded-2xl p-5 border border-border">
-          <p className="text-muted-foreground text-sm font-medium mb-1">Savings Rate</p>
+          <p className="text-muted-foreground text-sm font-medium mb-1">{t('dashboard.savings') || 'Savings Rate'}</p>
           <div className="text-2xl font-bold text-emerald-600">{savingsRate}%</div>
         </div>
       </motion.div>

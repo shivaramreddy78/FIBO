@@ -1,0 +1,49 @@
+{
+  "common": {
+    "loading": "లోడ్ అవుతోంది...",
+    "error": "ఒక లోపం ఏర్పడింది",
+    "submit": "సమర్పించు",
+    "cancel": "రద్దు చేయి",
+    "continue": "కొనసాగించు",
+    "save": "సేవ్ చేయి"
+  },
+  "navbar": {
+    "dashboard": "డ్యాష్‌బోర్డ్",
+    "profile": "ప్రొఫైల్",
+    "settings": "సెట్టింగులు",
+    "logout": "లాగ్ అవుట్",
+    "login": "లాగిన్",
+    "register": "నమోదు",
+    "home": "హోమ్",
+    "features": "లక్షణాలు",
+    "pricing": "ధరలు",
+    "language": "భాష"
+  },
+  "dashboard": {
+    "altCreditScore": "ప్రత్యామ్నాయ క్రెడిట్ స్కోర్",
+    "financialHealth": "ఆర్థిక ఆరోగ్యం",
+    "riskLevel": "ప్రమాద స్థాయి",
+    "loanRecommendation": "రుణ సిఫార్సు",
+    "repaymentProbability": "తిరిగి చెల్లించే సంభావ్యత",
+    "monthlyIncome": "నెలసరి ఆదాయం",
+    "monthlyExpenses": "నెలవారీ ఖర్చులు",
+    "savings": "పొదుపు",
+    "cashFlow": "నగదు ప్రవాహం",
+    "aiInsights": "AI అంతర్దృష్టులు",
+    "reports": "నివేదికలు",
+    "uploadDocuments": "పత్రాలను అప్‌లోడ్ చేయండి"
+  },
+  "forms": {
+    "email": "ఇమెయిల్",
+    "password": "పాస్వర్డ్",
+    "emailPlaceholder": "మీ ఇమెయిల్ నమోదు చేయండి",
+    "passwordPlaceholder": "మీ పాస్‌వర్డ్ నమోదు చేయండి",
+    "validationRequired": "ఈ ఫీల్డ్ అవసరం",
+    "successMessage": "ఆపరేషన్ విజయవంతమైంది"
+  },
+  "landing": {
+    "heroTitle": "అందరికీ ఆర్థిక చేరిక",
+    "heroSubtitle": "తదుపరి బిలియన్ వినియోగదారుల కోసం AI-ఆధారిత క్రెడిట్ అంచనా.",
+    "getStarted": "ప్రారంభించండి"
+  }
+}

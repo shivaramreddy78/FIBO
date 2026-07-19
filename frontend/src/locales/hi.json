@@ -1,0 +1,49 @@
+{
+  "common": {
+    "loading": "लोड हो रहा है...",
+    "error": "एक त्रुटि हुई",
+    "submit": "जमा करें",
+    "cancel": "रद्द करें",
+    "continue": "जारी रखें",
+    "save": "सहेजें"
+  },
+  "navbar": {
+    "dashboard": "डैशबोर्ड",
+    "profile": "प्रोफ़ाइल",
+    "settings": "सेटिंग्स",
+    "logout": "लॉग आउट",
+    "login": "लॉग इन",
+    "register": "पंजीकरण",
+    "home": "होम",
+    "features": "विशेषताएं",
+    "pricing": "मूल्य निर्धारण",
+    "language": "भाषा"
+  },
+  "dashboard": {
+    "altCreditScore": "वैकल्पिक क्रेडिट स्कोर",
+    "financialHealth": "वित्तीय स्वास्थ्य",
+    "riskLevel": "जोखिम स्तर",
+    "loanRecommendation": "ऋण सिफारिश",
+    "repaymentProbability": "चुकौती संभावना",
+    "monthlyIncome": "मासिक आय",
+    "monthlyExpenses": "मासिक व्यय",
+    "savings": "बचत",
+    "cashFlow": "नकदी प्रवाह",
+    "aiInsights": "एआई अंतर्दृष्टि",
+    "reports": "रिपोर्ट",
+    "uploadDocuments": "दस्तावेज़ अपलोड करें"
+  },
+  "forms": {
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "emailPlaceholder": "अपना ईमेल दर्ज करें",
+    "passwordPlaceholder": "अपना पासवर्ड दर्ज करें",
+    "validationRequired": "यह क्षेत्र आवश्यक है",
+    "successMessage": "ऑपरेशन सफल"
+  },
+  "landing": {
+    "heroTitle": "सभी के लिए वित्तीय समावेशन",
+    "heroSubtitle": "अगले अरब उपयोगकर्ताओं के लिए एआई-संचालित क्रेडिट मूल्यांकन।",
+    "getStarted": "शुरू करें"
+  }
+}

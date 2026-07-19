@@ -1,0 +1,49 @@
+{
+  "common": {
+    "loading": "लोड करत आहे...",
+    "error": "एक त्रुटी आली",
+    "submit": "सबमिट करा",
+    "cancel": "रद्द करा",
+    "continue": "सुरू ठेवा",
+    "save": "जतन करा"
+  },
+  "navbar": {
+    "dashboard": "डॅशबोर्ड",
+    "profile": "प्रोफाइल",
+    "settings": "सेटिंग्ज",
+    "logout": "लॉग आउट",
+    "login": "लॉग इन",
+    "register": "नोंदणी करा",
+    "home": "मुख्यपृष्ठ",
+    "features": "वैशिष्ट्ये",
+    "pricing": "किंमत",
+    "language": "भाषा"
+  },
+  "dashboard": {
+    "altCreditScore": "पर्यायी क्रेडिट स्कोअर",
+    "financialHealth": "आर्थिक आरोग्य",
+    "riskLevel": "धोक्याची पातळी",
+    "loanRecommendation": "कर्ज शिफारस",
+    "repaymentProbability": "परतफेडीची शक्यता",
+    "monthlyIncome": "मासिक उत्पन्न",
+    "monthlyExpenses": "मासिक खर्च",
+    "savings": "बचत",
+    "cashFlow": "रोख प्रवाह",
+    "aiInsights": "AI अंतर्दृष्टी",
+    "reports": "अहवाल",
+    "uploadDocuments": "कागदपत्रे अपलोड करा"
+  },
+  "forms": {
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "emailPlaceholder": "तुमचा ईमेल प्रविष्ट करा",
+    "passwordPlaceholder": "तुमचा पासवर्ड प्रविष्ट करा",
+    "validationRequired": "हे क्षेत्र आवश्यक आहे",
+    "successMessage": "ऑपरेशन यशस्वी"
+  },
+  "landing": {
+    "heroTitle": "सर्वांसाठी आर्थिक समावेशन",
+    "heroSubtitle": "पुढील अब्ज वापरकर्त्यांसाठी एआय-सक्षम क्रेडिट मूल्यांकन.",
+    "getStarted": "सुरुवात करा"
+  }
+}

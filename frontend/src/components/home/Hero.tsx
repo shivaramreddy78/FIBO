@@ -1,13 +1,15 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Zap, PlayCircle } from 'lucide-react';
+import { ArrowRight, Zap, PlayCircle, Hexagon } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { InteractiveDashboardPreview } from './InteractiveDashboardPreview';
+import { useTranslation } from 'react-i18next';
 
 export function Hero() {
   const { isAuthenticated } = useAuth();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleStart = () => {
     if (isAuthenticated) navigate('/dashboard');
@@ -38,10 +40,16 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }} 
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.5, delay: 0.1 }} 
-          className="text-5xl md:text-7xl lg:text-[5.5rem] font-heading font-extrabold tracking-tight mb-6 max-w-5xl leading-[1.05]"
+          className="text-5xl md:text-7xl lg:text-[5.5rem] font-heading font-extrabold tracking-tight mb-6 max-w-5xl leading-[1.05] flex flex-wrap items-center justify-center gap-x-4 gap-y-2"
         >
-          Financial Intelligence & <br/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-600">Banking Optimizer.</span>
+          <div className="flex items-center gap-4 text-primary">
+            <div className="relative flex items-center justify-center text-accent">
+              <Hexagon className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" fill="currentColor" />
+              <div className="absolute w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 bg-white rounded-full"></div>
+            </div>
+            <span>FIBO</span>
+          </div>
+          <span>{t('landing.heroTitle') || 'Financial Inclusion for All'}</span>
         </motion.h1>
         
         <motion.p 
@@ -50,7 +58,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }} 
           className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl leading-relaxed"
         >
-          FIBO is an AI-powered Alternative Credit Assessment Platform that helps banks and financial institutions make smarter lending decisions using real financial behavior instead of relying only on traditional credit scores.
+          {t('landing.heroSubtitle') || 'FIBO is an AI-powered Alternative Credit Assessment Platform that helps banks and financial institutions make smarter lending decisions using real financial behavior instead of relying only on traditional credit scores.'}
         </motion.p>
         
         <motion.div 
@@ -60,7 +68,7 @@ export function Hero() {
           className="flex flex-col sm:flex-row items-center gap-4 mb-20 w-full justify-center max-w-2xl mx-auto"
         >
           <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg shadow-lg hover:shadow-xl transition-all" onClick={handleStart}>
-            Start Live Assessment <ArrowRight className="ml-2 w-5 h-5" />
+            {t('landing.getStarted') || 'Start Live Assessment'} <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
           <Link to="/demo" className="w-full sm:w-auto">
             <Button size="lg" variant="outline" className="w-full h-14 px-8 text-lg bg-white hover:bg-muted/50 border-border">

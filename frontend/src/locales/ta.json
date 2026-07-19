@@ -1,0 +1,49 @@
+{
+  "common": {
+    "loading": "ஏற்றுகிறது...",
+    "error": "ஒரு பிழை ஏற்பட்டது",
+    "submit": "சமர்ப்பி",
+    "cancel": "ரத்துசெய்",
+    "continue": "தொடரவும்",
+    "save": "சேமி"
+  },
+  "navbar": {
+    "dashboard": "டாஷ்போர்டு",
+    "profile": "சுயவிவரம்",
+    "settings": "அமைப்புகள்",
+    "logout": "வெளியேறு",
+    "login": "உள்நுழை",
+    "register": "பதிவு",
+    "home": "முகப்பு",
+    "features": "அம்சங்கள்",
+    "pricing": "விலை",
+    "language": "மொழி"
+  },
+  "dashboard": {
+    "altCreditScore": "மாற்று கடன் மதிப்பெண்",
+    "financialHealth": "நிதி ஆரோக்கியம்",
+    "riskLevel": "ஆபத்து நிலை",
+    "loanRecommendation": "கடன் பரிந்துரை",
+    "repaymentProbability": "திருப்பிச் செலுத்தும் நிகழ்தகவு",
+    "monthlyIncome": "மாதாந்திர வருமானம்",
+    "monthlyExpenses": "மாதாந்திர செலவுகள்",
+    "savings": "சேமிப்பு",
+    "cashFlow": "பணப்புழக்கம்",
+    "aiInsights": "AI நுண்ணறிவு",
+    "reports": "அறிக்கைகள்",
+    "uploadDocuments": "ஆவணங்களை பதிவேற்றவும்"
+  },
+  "forms": {
+    "email": "மின்னஞ்சல்",
+    "password": "கடவுச்சொல்",
+    "emailPlaceholder": "உங்கள் மின்னஞ்சலை உள்ளிடவும்",
+    "passwordPlaceholder": "உங்கள் கடவுச்சொல்லை உள்ளிடவும்",
+    "validationRequired": "இந்த புலம் தேவை",
+    "successMessage": "செயல்பாடு வெற்றிகரமாக முடிந்தது"
+  },
+  "landing": {
+    "heroTitle": "அனைவருக்கும் நிதி உள்ளடக்கம்",
+    "heroSubtitle": "அடுத்த பில்லியன் பயனர்களுக்கான AI-ஆதரவு கடன் மதிப்பீடு.",
+    "getStarted": "தொடங்குங்கள்"
+  }
+}

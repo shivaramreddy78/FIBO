@@ -1,0 +1,49 @@
+{
+  "common": {
+    "loading": "ಲೋಡ್ ಆಗುತ್ತಿದೆ...",
+    "error": "ಒಂದು ದೋಷ ಸಂಭವಿಸಿದೆ",
+    "submit": "ಸಲ್ಲಿಸಿ",
+    "cancel": "ರದ್ದುಗೊಳಿಸಿ",
+    "continue": "ಮುಂದುವರಿಸಿ",
+    "save": "ಉಳಿಸಿ"
+  },
+  "navbar": {
+    "dashboard": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+    "profile": "ಪ್ರೊಫೈಲ್",
+    "settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+    "logout": "ಲಾಗ್ ಔಟ್",
+    "login": "ಲಾಗ್ ಇನ್",
+    "register": "ನೋಂದಣಿ",
+    "home": "ಮುಖಪುಟ",
+    "features": "ವೈಶಿಷ್ಟ್ಯಗಳು",
+    "pricing": "ಬೆಲೆ",
+    "language": "ಭಾಷೆ"
+  },
+  "dashboard": {
+    "altCreditScore": "ಪರ್ಯಾಯ ಕ್ರೆಡಿಟ್ ಸ್ಕೋರ್",
+    "financialHealth": "ಹಣಕಾಸು ಆರೋಗ್ಯ",
+    "riskLevel": "ಅಪಾಯದ ಮಟ್ಟ",
+    "loanRecommendation": "ಸಾಲದ ಶಿಫಾರಸು",
+    "repaymentProbability": "ಮರುಪಾವತಿ ಸಾಧ್ಯತೆ",
+    "monthlyIncome": "ಮಾಸಿಕ ಆದಾಯ",
+    "monthlyExpenses": "ಮಾಸಿಕ ವೆಚ್ಚಗಳು",
+    "savings": "ಉಳಿತಾಯ",
+    "cashFlow": "ನಗದು ಹರಿವು",
+    "aiInsights": "AI ಒಳನೋಟಗಳು",
+    "reports": "ವರದಿಗಳು",
+    "uploadDocuments": "ದಾಖಲೆಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "forms": {
+    "email": "ಇಮೇಲ್",
+    "password": "ಪಾಸ್ವರ್ಡ್",
+    "emailPlaceholder": "ನಿಮ್ಮ ಇಮೇಲ್ ನಮೂದಿಸಿ",
+    "passwordPlaceholder": "ನಿಮ್ಮ ಪಾಸ್ವರ್ಡ್ ನಮೂದಿಸಿ",
+    "validationRequired": "ಈ ಕ್ಷೇತ್ರ ಅಗತ್ಯವಿದೆ",
+    "successMessage": "ಕಾರ್ಯಾಚರಣೆ ಯಶಸ್ವಿಯಾಗಿದೆ"
+  },
+  "landing": {
+    "heroTitle": "ಎಲ್ಲರಿಗೂ ಆರ್ಥಿಕ ಸೇರ್ಪಡೆ",
+    "heroSubtitle": "ಮುಂದಿನ ಶತಕೋಟಿ ಬಳಕೆದಾರರಿಗೆ AI-ಚಾಲಿತ ಕ್ರೆಡಿಟ್ ಮೌಲ್ಯಮಾಪನ.",
+    "getStarted": "ಪ್ರಾರಂಭಿಸಿ"
+  }
+}

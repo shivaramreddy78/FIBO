@@ -8,6 +8,7 @@ import { apiClient } from '../../api/client';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm as useHookForm } from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
 
 const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -22,6 +23,7 @@ export function LoginPage() {
   const navigate = useNavigate();
   const { login } = useAuth();
   const [error, setError] = useState('');
+  const { t } = useTranslation();
 
   const { register, handleSubmit, watch, formState: { errors, isSubmitting, isValid } } = useHookForm<LoginForm>({
     resolver: zodResolver(loginSchema),
@@ -70,7 +72,7 @@ export function LoginPage() {
             </Link>
           </div>
 
-          <h1 className="text-4xl font-heading font-bold mb-2">Welcome back</h1>
+          <h1 className="text-4xl font-heading font-bold mb-2">Welcome to FIBO</h1>
           <p className="text-muted-foreground mb-8">Sign in to access your financial dashboard.</p>
 
           {error && (
@@ -81,7 +83,7 @@ export function LoginPage() {
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">Email</label>
+              <label className="block text-sm font-medium text-foreground mb-2">{t('forms.email') || 'Email'}</label>
               <div className="relative">
                 <input 
                   {...register('email')}
@@ -100,7 +102,7 @@ export function LoginPage() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">Password</label>
+              <label className="block text-sm font-medium text-foreground mb-2">{t('forms.password') || 'Password'}</label>
               <input 
                 {...register('password')}
                 type="password"
@@ -118,7 +120,7 @@ export function LoginPage() {
             </div>
 
             <Button type="submit" className="w-full h-12 rounded-xl text-lg" disabled={isSubmitting || !isValid}>
-              {isSubmitting ? <Loader2 className="w-5 h-5 animate-spin" /> : 'Sign In'}
+              {isSubmitting ? <Loader2 className="w-5 h-5 animate-spin" /> : t('navbar.login') || 'Sign In'}
             </Button>
           </form>
 
